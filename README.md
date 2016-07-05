@@ -1,4 +1,4 @@
-# es6-tips-extension
+# es6-tips
 
 ##ES6 has brought a new way of declaring anonymous functions, with a much more simple syntax.
 
