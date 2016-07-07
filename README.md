@@ -23,3 +23,29 @@ You can take this one step further and have a single parameter for the function,
     const pow = x => x * x;
 
 Aside for the fact that the syntax is much shorter, there is one  more reason to use arrow functions: they have no scope, meaning there is no "this" keyword. They will keep the exterior scope.
+
+##2. Similar to array destructuring, object destructuring allows you to asign values to an object in variables.
+
+    let obj = {
+        name: 'John Doe',
+        email: 'john@doe.com',
+        twitter: '@johndoe'
+    };
+
+    ({ name, email } = obj);
+    // same as name = obj.name, email = obj.name
+
+
+This is really easy to use even in parameters of a function:
+
+    let user = {
+        id: 1,
+        name: 'John Doe',
+        email: 'john@doe.com',
+        someOtherField: 'lorem ipsum'
+    };
+
+    const sayHello = ({ name, email }) => {
+        console.log('Hello ', name, '. You can use ', email, ' to log in');
+    };
+    sayHello(user);
