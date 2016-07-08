@@ -1,6 +1,8 @@
 # es6-tips
 
-##1. ES6 has brought a new way of declaring anonymous functions, with a much more simple syntax.
+##1. Arrow functions
+
+ES6 has brought a new way of declaring anonymous functions, with a simpler syntax.
 
     const sum = (a, b) => {
         const sum = a + b;
@@ -24,7 +26,9 @@ You can take this one step further and have a single parameter for the function,
 
 Aside for the fact that the syntax is much shorter, there is one  more reason to use arrow functions: they have no scope, meaning there is no "this" keyword. They will keep the exterior scope.
 
-##2. Similar to array destructuring, object destructuring allows you to asign values to an object in variables.
+##2. Object destructuring
+
+Similar to array destructuring, object destructuring allows you to asign values to an object in variables.
 
     let obj = {
         name: 'John Doe',
