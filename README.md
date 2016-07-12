@@ -53,3 +53,17 @@ This is really easy to use even in parameters of a function:
         console.log('Hello ', name, '. You can use ', email, ' to log in');
     };
     sayHello(user);
+
+##3. Template literals
+
+Template literals were introduced in ES6 to allow easy string interpolations and multi-line strings (finally). To use template literals simply wrap your string between backticks. A few examples:
+
+    const name = 'John';
+    const getAge = () => 34;
+
+    console.log(`Hello, my name is ${name} and I am ${getAge()}.`);
+
+    // Multiline example
+    console.log(`This is a
+    multiline example
+    of template literals`);
