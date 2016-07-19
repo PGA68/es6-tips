@@ -67,3 +67,18 @@ Template literals were introduced in ES6 to allow easy string interpolations and
     console.log(`This is a
     multiline example
     of template literals`);
+
+##4. `for .. of` syntax for looping over arrays
+
+ES6 brings a new simple and concise way to loop over arrays:
+
+    const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
+
+    for (const planet of planets) {
+        console.log(planet);
+    }
+
+    // If we need the index we can use something like this
+    for (const [i, planet] of planets.entries()) {
+        console.log(`${planet} is the planet no. #${i + 1}`);
+    }
