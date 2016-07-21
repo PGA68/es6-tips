@@ -82,3 +82,12 @@ ES6 brings a new simple and concise way to loop over arrays:
     for (const [i, planet] of planets.entries()) {
         console.log(`${planet} is the planet no. #${i + 1}`);
     }
+
+##5. Spread operator to convert iterables to arrays
+
+The spread operator can be used to transform iterables to actual arrays. Remember `Array.prototype.forEach.call(document.getElementsByTagName('img'), function () { ... })`? Well, now you can simply:
+
+    [...document.getElementsByTagName('img')]
+            .forEach(({ src }) => console.log(src))
+
+(also notice destructuring used to only get the `src` property from the img objects over which we loop)
