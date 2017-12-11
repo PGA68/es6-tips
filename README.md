@@ -37,7 +37,7 @@ Similar to array destructuring, object destructuring allows you to asign values 
     };
 
     ({ name, email } = obj);
-    // same as name = obj.name, email = obj.name
+    // same as name = obj.name, email = obj.email
 
 
 This is really easy to use even in parameters of a function:
